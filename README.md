@@ -542,6 +542,7 @@ or `signedXdr` strings.
 - `/scenarios` → Scenario gallery
 - `/activity` → Audit trail timeline
 - `/ops` → Operations/telemetry dashboard
+- `404` → Branded not-found page (`src/app/not-found.tsx`) with safe navigation (`/` and `/console`) without path reflection
 
 ---
 
