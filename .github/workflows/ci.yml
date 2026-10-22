@@ -15,6 +15,11 @@ on:
 permissions:
   contents: read
 
+# Disable Next.js anonymous telemetry reporting during CI builds and tests
+# to prevent outbound network calls, avoid spurious tracking, and speed up CI execution.
+env:
+  NEXT_TELEMETRY_DISABLED: "1"
+
 jobs:
   quality:
     runs-on: ubuntu-latest
