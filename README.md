@@ -281,6 +281,7 @@ To clean up local developer state safely, you can use the local demo reset utili
 Reference (`.env.example`):
 
 ```bash
+# Horizon API endpoint (must not contain embedded username/password credentials)
 STELLAR_HORIZON_URL=https://horizon-testnet.stellar.org
 # Optional; defaults to testnet passphrase. Must agree with STELLAR_HORIZON_URL.
 STELLAR_NETWORK_PASSPHRASE=
@@ -291,7 +292,11 @@ DATABASE_SSL=false
 FORTEXA_STORE_DIR=
 
 FORTEXA_SHARED_STATE_PATH=
+# Redis URL (must not contain embedded username/password credentials)
 REDIS_URL=
+# Redis authentication credentials (configured separately to prevent credential leaks)
+REDIS_PASSWORD=
+REDIS_USERNAME=
 
 GROQ_API_KEY=
 GROQ_MODEL=llama-3.3-70b-versatile
