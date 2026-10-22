@@ -663,7 +663,19 @@ Common Stellar Horizon failures during the signed payment flow:
 
 ---
 
-## 19) 📄 License
+## 19) 🔍 TypeScript Type Checking
+
+Fortexa enforces static type checking in CI as a dedicated blocking step via the TypeScript compiler:
+
+```bash
+npm run typecheck
+```
+
+This command runs `tsc --noEmit` against the project configuration (`tsconfig.json`) without writing output files, ensuring compile-time safety across routes, libraries, and tests.
+
+---
+
+## 20) 📄 License
 
 MIT — see the canonical text in [`LICENSE`](LICENSE).
 
